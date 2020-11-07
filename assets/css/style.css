@@ -129,6 +129,11 @@
 		display: none;
 	}
 }
+@media (max-width: 576px) {
+	.cert-logo img {
+		display: none;
+	}
+}
 
 #ourtagline {
 	position: absolute;
@@ -281,6 +286,14 @@
 
 .why-us-text {
 	padding: 0 50px;
+}
+.award-img img {
+	width: 50%;
+	max-height: 300px;
+}
+.odd-img img {
+	width: 100%;
+	max-height: 500px;
 }
 
 @media (min-width: 768px) {
@@ -494,7 +507,9 @@ h1 {
 #team {
 	background: linear-gradient(180deg, #87ceeb, #006994 100%);
 }
-
+#team .container-fluid img {
+	width: 100%;
+}
 .contact-clean {
 	background: none !important;
 }
