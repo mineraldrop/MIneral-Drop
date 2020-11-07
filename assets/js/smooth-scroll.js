@@ -1,13 +1,4 @@
 /*! SmoothScroll v16.1.4 | (c) 2020 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
-// Intro animation section
-var gsap;
-const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
-
-tl.to('.text', { y: '0%', duration: 1, stagger: 0.25 });
-tl.to('.slider', { y: '-100%', duration: 1.5 });
-tl.to('.intro', { y: '-100%', duration: 1 }, '-=1');
-
-//shifted elements from index
 
 const body = document.querySelector('body');
 const navbar = document.querySelector('.navbar');
@@ -15,8 +6,9 @@ const menuBtn = document.querySelector('.menu-btn');
 const cancelBtn = document.querySelector('.cancel-btn');
 const homeBtn = document.querySelector('.homeBtn');
 const aboutBtn = document.querySelector('.aboutBtn');
+const whyBtn = document.querySelector('.whyBtn');
 const servicesBtn = document.querySelector('.servicesBtn');
-const contactBtn = document.querySelector('.contactBtn');
+const teamBtn = document.querySelector('.teamBtn');
 menuBtn.onclick = () => {
 	navbar.classList.add('show');
 	menuBtn.classList.add('hide');
@@ -37,12 +29,17 @@ aboutBtn.onclick = () => {
 	navbar.classList.remove('show');
 	menuBtn.classList.remove('hide');
 };
+whyBtn.onclick = () => {
+	body.classList.remove('disabled');
+	navbar.classList.remove('show');
+	menuBtn.classList.remove('hide');
+};
 servicesBtn.onclick = () => {
 	body.classList.remove('disabled');
 	navbar.classList.remove('show');
 	menuBtn.classList.remove('hide');
 };
-contactBtn.onclick = () => {
+teamBtn.onclick = () => {
 	body.classList.remove('disabled');
 	navbar.classList.remove('show');
 	menuBtn.classList.remove('hide');
@@ -61,10 +58,6 @@ window.onscroll = () => {
 		: ((global = global || self), (global.SmoothScroll = factory()));
 })(this, function () {
 	'use strict';
-
-	//
-	// Default settings
-	//
 
 	var defaults = {
 		// Selectors
