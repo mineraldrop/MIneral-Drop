@@ -508,7 +508,7 @@ h1 {
 /* Team slides */
 
 #team {
-	background: linear-gradient(180deg, #87ceeb, #006994 100%);
+	background: linear-gradient(180deg, #87ceeb, #fff 100%);
 }
 
 #team .container img {
@@ -728,7 +728,7 @@ h1 {
 .header {
 	position:relative;
 	text-align:center;
-	background: linear-gradient(360deg, #282d32 0%, #006994 100%);
+	background: linear-gradient(180deg, #fff 0%, #006994 100%);
 	color:white;
   }
 .flex { /*Flexbox for containers*/
@@ -786,8 +786,8 @@ h1 {
 /*experimental end*/
 .footer-dark {
 	padding: 50px 0;
-	color: #f0f9ff;
-	background-color: #282d32;
+	color:#f0f9ff;
+	background-color:  #006994;
 }
 
 .footer-dark h3 {
@@ -856,9 +856,9 @@ h1 {
 	display: inline-block;
 	text-align: center;
 	border-radius: 50%;
-	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+	box-shadow: 0 0 0 1px rgba(225, 225, 225, 0.4);
 	margin: 0 8px;
-	color: #fff;
+	color: #f0f9ff;
 	opacity: 0.75;
 }
 
