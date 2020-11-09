@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #1b1b1b;
+	background: #2980b9;
 }
 
 ::selection {
@@ -49,9 +49,9 @@
 }
 
 .navbar.sticky {
-	background: #282d32;
+	background: #fff;
 	padding: 10px 0;
-	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 3px 5px 0px rgba(255, 255, 255, 0.1);
 }
 
 .navbar .content {
@@ -75,7 +75,7 @@
 }
 
 .menu-list li a {
-	color: rgb(241, 241, 241);
+	color: rgb(5, 5, 5);
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	font-weight: 300;
@@ -172,7 +172,7 @@
 }
 
 .icon:hover {
-	color: #fff;
+	color: #000;
 }
 
 .menu-list .cancel-btn {
@@ -182,7 +182,7 @@
 }
 
 .menu-list .cancel-btn:hover {
-	color: #fff;
+	color: #000;
 	transition: 0.1s;
 }
 
@@ -227,7 +227,7 @@
 		display: block;
 		padding: 40px 0;
 		text-align: center;
-		background: #222;
+		background: #fff;
 		transition: all 0.3s ease-in-out;
 	}
 
@@ -426,7 +426,7 @@
 	}
 }
 
-/* Why choose Fashioo styles */
+/* Why choose mineral drop styles */
 
 #services {
 	background: linear-gradient(180deg, #87ceeb, #006994 100%);
