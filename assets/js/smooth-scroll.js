@@ -6,8 +6,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const cancelBtn = document.querySelector('.cancel-btn');
 const homeBtn = document.querySelector('.homeBtn');
 const aboutBtn = document.querySelector('.aboutBtn');
-const whyBtn = document.querySelector('.whyBtn');
-const servicesBtn = document.querySelector('.servicesBtn');
+const productsBtn = document.querySelector('.productsBtn');
 const teamBtn = document.querySelector('.teamBtn');
 menuBtn.onclick = () => {
 	navbar.classList.add('show');
@@ -29,12 +28,7 @@ aboutBtn.onclick = () => {
 	navbar.classList.remove('show');
 	menuBtn.classList.remove('hide');
 };
-whyBtn.onclick = () => {
-	body.classList.remove('disabled');
-	navbar.classList.remove('show');
-	menuBtn.classList.remove('hide');
-};
-servicesBtn.onclick = () => {
+productsBtn.onclick = () => {
 	body.classList.remove('disabled');
 	navbar.classList.remove('show');
 	menuBtn.classList.remove('hide');
