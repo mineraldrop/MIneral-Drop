@@ -258,7 +258,73 @@ strong{
 		font-size: 27px;
 	}
 }
+/*video*/
+section.home-hero-stack {
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.hhs--video-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.hhs--video-cell {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}.hhs--text-wrap {
+    position: absolute;
+    top: 48vh;
+	left: 0;
+	color: #fff;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.section-down-arrow {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    width: 100%;
+    max-width: 4rem;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    cursor: pointer;
+    animation: bounce 1.5s infinite alternate;
+}
+.section-down-arrow svg {
+    width: 100%;
+    display: block;
+    transition: all .25s ease;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+/*below video*/
 
+section.home-intro {
+    padding: 6rem 0 0;
+    text-align: center;
+}
+section.home-intro h4 {
+    max-width: 60rem;
+    margin: 0 auto;
+    color: #262626;
+    line-height: 1.4em;
+}
+.home-intro .container:after {
+    clear: both;
+    content: '';
+    display: table;
+}
 /* why us */
 
 #why-us {
@@ -352,11 +418,76 @@ strong{
 		background: rgba(0, 0, 0, 0.507);
 	}
 }
+/*1st sec anim*/
 
+.our-water-anim {
+	padding: 5px;
+	margin: 0%;
+}
+
+.our-water-anim .para {
+	color: #1b1b1b;
+	text-align: center;
+}
+
+.our-water-anim h6 {
+	margin: 0%;
+	padding: 20px;
+}
+
+.our-water-anim .animated-text {
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	color: #006994;
+	height: 20px;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 5px;
+
+}
+
+.our-water-anim .text {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.our-water-anim .text:first-child {
+	animation: anim 20s infinite;
+}
+
+@keyframes anim {
+	0% {
+		margin-top: 0;
+	}
+
+	16% {
+		margin-top: -60px;
+	}
+
+	33% {
+		margin-top: -120px;
+	}
+
+	50% {
+		margin-top: -180px;
+	}
+
+	66% {
+		margin-top: -120px;
+	}
+
+	82% {
+		margin-top: -60px;
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
 /* our water */
 .our-water {
-	background-color: #87ceeb;
-	padding: 25px;
+	padding: 5px;
 	margin: 0%;
 }
 
@@ -367,17 +498,15 @@ strong{
 
 .our-water h6 {
 	margin: 0%;
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	padding: 20px;
 }
 
 .our-water .animated-text {
 	text-align: center;
-	width: 150px;
-	padding: 10px;
+	width: 100%;
+	padding: 20px;
 	color: #fff;
 	position: relative;
-	background: #2980b9;
 	height: 20px;
 	overflow: hidden;
 	margin: auto;
