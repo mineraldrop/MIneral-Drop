@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
+	text-align: center;
 }
 
 /* custom scroll bar */
@@ -69,6 +70,7 @@
 	font-weight: 300;
 	margin-left: 25px;
 	text-decoration: none;
+	padding: 0px;
 	transition: 0.1s;
 }
 
@@ -76,7 +78,7 @@
 	color: #2980b9;
 }
 .row img {
-	padding: 25px;
+	padding: 0px;
 }
 
 @media (max-width: 766px) {
@@ -98,7 +100,6 @@
 	left: 34%;
 	color: rgb(255, 255, 255);
 }
-
 @media (min-width: 800px) {
 	#ourname {
 		position: absolute;
@@ -367,4 +368,11 @@
 
 .contact-us-item {
 	opacity: 0.71;
+}
+
+@media (max-width: 880px) {
+	.dropdown-menu.show {
+		text-align: center;
+		margin-left: 50px;
+	}
 }
